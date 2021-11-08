@@ -1,0 +1,46 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  border: 2px solid rebeccapurple;
+  background: url(../images/container-bg.png);
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.article {
+  box-sizing: border-box;
+  background-color: cornsilk;
+  width: 300px;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column wrap;
+}
+.article_5 {
+  width: 600px;
+}
+.title {
+  text-align: left;
+  font-size: 25px;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  text-align: left;
+}
+
+.article_1,
+.article_2,
+.article_3,
+.article_4 {
+  order: 1;
+}
