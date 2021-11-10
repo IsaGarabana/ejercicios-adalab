@@ -1,20 +1,32 @@
-.block {
-  display: none;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bloque1 {
   background-color: cyan;
   width: 100px;
-  height: 100px;
+  height: 500px;
 }
 
-.inline {
+.bloque2 {
   background-color: darkblue;
-  display: inline;
   width: 100px;
-  height: 100px;
+  height: 500px;
 }
 
-.inline-block {
-  display: inline;
+.bloque3 {
   background-color: darkorange;
   width: 100px;
-  height: 100px;
+  height: 500px;
+}
+
+.bloque1,
+.bloque2,
+.bloque3 {
+  text-align: center;
+}
+
+section {
+  display: flex;
 }
