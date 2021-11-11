@@ -1,0 +1,27 @@
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.container {
+  margin: 0 15px;
+}
+
+@media all and (min-width: 768px) {
+  .title {
+    font-weight: bold;
+    font-size: 1.75rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .container {
+    margin: 30px 40px;
+  }
+}
