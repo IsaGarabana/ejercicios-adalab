@@ -1,0 +1,59 @@
+@import "core/variables";
+@import "core/reset";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+	border: 2px dashed olive;
+	display: grid;
+	height: 100vh;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 20% 60% 20%;
+
+	& .header {
+		font-size: 30px;
+		grid-column: span 12;
+		background-color: pink;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+	}
+
+	& .menu {
+		grid-column: 1/4;
+		background-color: rebeccapurple;
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+	}
+
+	& .content {
+		grid-column: 4/13;
+		background-color: red;
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+	}
+
+	& .footer {
+		grid-column: 1/13;
+		background-color: blue;
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+	}
+}
