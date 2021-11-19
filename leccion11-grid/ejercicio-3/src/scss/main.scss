@@ -10,6 +10,13 @@
 * {
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+@mixin pepino($color) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $color;
+}
 .wrapper {
 	border: 2px dashed olive;
 	display: grid;
@@ -21,39 +28,27 @@
 		font-size: 30px;
 		grid-column: span 12;
 		background-color: pink;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: white;
+		@include pepino(white);
 	}
 
 	& .menu {
 		grid-column: 1/4;
 		background-color: rebeccapurple;
 		font-size: 30px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: white;
+		@include pepino(red);
 	}
 
 	& .content {
 		grid-column: 4/13;
 		background-color: red;
 		font-size: 30px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: white;
+		@include pepino(rgb(231, 162, 35));
 	}
 
 	& .footer {
 		grid-column: 1/13;
 		background-color: blue;
 		font-size: 30px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: white;
+		@include pepino(lightgrey);
 	}
 }

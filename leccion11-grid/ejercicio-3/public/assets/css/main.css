@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; }
+    color: red; }
   .wrapper .content {
     grid-column: 4/13;
     background-color: red;
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; }
+    color: #e7a223; }
   .wrapper .footer {
     grid-column: 1/13;
     background-color: blue;
@@ -38,6 +38,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; }
+    color: lightgrey; }
 
 /*# sourceMappingURL=main.css.map */
