@@ -1,0 +1,14 @@
+.menu {
+	display: flex;
+	list-style-type: none;
+
+	&__item {
+		padding: 5px;
+		margin: 2px;
+		background-color: aqua;
+
+		&:hover {
+			color: white;
+		}
+	}
+}

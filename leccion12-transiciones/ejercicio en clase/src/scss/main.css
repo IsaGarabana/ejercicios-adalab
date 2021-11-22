@@ -1,0 +1,24 @@
+/*@import "core/variables";
+@import "core/reset";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.menu__item {
+  padding: 5px;
+  margin: 2px;
+  background-color: aqua;
+}
+
+.menu__item:hover {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
