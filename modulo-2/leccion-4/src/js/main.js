@@ -2,17 +2,17 @@
 
 // //Ejercicio 1
 
-// function multiply(a, b) {
-// 	return a * b;
-// }
-// console.log(multiply(4, 6));
+function multiply(a, b) {
+	return a * b;
+}
+console.log(multiply(4, 6));
 
 // //Ejercicio 2
 
-// function media(a, b, c, d) {
-// 	return (a + b + c + d) / 4;
-// }
-// console.log(media(10, 3, 3, 2));
+function media(a, b, c, d) {
+	return (a + b + c + d) / 4;
+}
+console.log(media(10, 3, 3, 2));
 
 //Ejercicio 3
 function ticket(a) {

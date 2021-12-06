@@ -10,3 +10,9 @@
 	color: blueviolet;
 	font-size: 40px;
 }
+
+.separate {
+	height: 5px;
+	width: 100%;
+	background-color: black;
+}
