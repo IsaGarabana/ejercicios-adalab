@@ -38,9 +38,10 @@ console.log("Ana paga " + Ana + "€, y el resto pagan " + todasMenosAna + "€"
 //ejercicio 5
 const daysInAYear = 365;
 const hoursInADay = 24;
-const YearsInMyLife = 60;
+const YearsInMyLife = 40;
 
 const hoursLived = YearsInMyLife * hoursInADay * daysInAYear;
+console.log(hoursLived);
 
 //ejercicio 6
 
