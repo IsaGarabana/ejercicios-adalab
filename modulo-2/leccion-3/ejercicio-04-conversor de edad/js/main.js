@@ -22,3 +22,5 @@ dog.innerHTML = dogAge;
 human.innerHTML = humanAge;
 
 //SUPER MARA!!!
+
+
