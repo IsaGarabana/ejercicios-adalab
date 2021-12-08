@@ -24,7 +24,6 @@ function getEl(selector) {
 
 // Sin modificar estas dos funciones, vamos a hacer lo siguiente:
 // usando nuestra función getEl accedemos al párrafo, y recogemos su valor (con innerHTML)
-debugger;
 
 function getEl(selector) {
 	const element = document.querySelector(selector);
