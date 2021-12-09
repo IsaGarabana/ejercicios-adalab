@@ -1,30 +1,18 @@
 "use strict";
-// Tenemos que crear una página vacía. Al pulsar la tecla 'r' su color de fondo cambia a rojo y al pulsar la 'm' a morado. Vamos a escuchar un evento de teclado directamente sobre el elemento document.
+// Crear una página con un input de texto y un párrafo vacío. Cada vez que la usuaria escriba una letra tenemos que recoger el valor del input al que le pusimos el listener y escribirlo en el párrafo.
+// Nota: el objetivo es hacerlo utilizando event.currentTarget
 
-// const background = document.querySelector(".background");
-// debugger;
-// function SwitchBackgroundColor() {
-// 	if (background.classList.contains("colorR")) {
-// 		background.classList.remove("colorR");
-// 	} else if (background.classList.contains("colorM")) {
-// 		background.classList.remove("colorM");
-// 	}
+// cogemos el elemento de HTML Input y el del texto
+const input = document.querySelector(".input");
+const paragraph = document.querySelector(".paragraph");
 
-// 	if (Event.key === "r") {
-// 		background.classList.add("colorR");
-// 	}
-
-// 	if (Event.key === "m") {
-// 		background.classList.add("colorR");
-// 	}
+// Hacemos la función de escritura
+// function getText(event) {
+// 	paragraph.innerHTML = event.currentTarget.value;
 // }
 
-// background.addEventListener("keydown", SwitchBackgroundColor);
+// Escrita en arrow:
+const getText = (event) => (paragraph.innerHTML = event.currentTarget.value);
+// Y la de listening
 
-const buttonElement = document.querySelector(".button");
-
-function handleButtonClick(event) {
-	console.log(event.currentTarget);
-}
-
-buttonElement.addEventListener("click", handleButtonClick);
+input.addEventListener("keypress", getText);
