@@ -6,23 +6,15 @@ const adalaber = {
 	name: "Susana",
 	age: 34,
 	job: "periodista",
-	run: () => {
-		return "estoy corriendo";
-	},
+	run: () => "estoy corriendo",
 	runAMarathon: (distance) =>
 		`${adalaber.run()} un maratón de ${distance} kilómetros`,
 	showBio: function () {
 		console.log(
-			"Mi nombre es " +
-				this.name +
-				", tengo " +
-				this.age +
-				" años y soy " +
-				this.job +
-				"."
+			`Mi nombre es ${this.name}, tengo ${this.age} años y soy ${this.job}.`
 		);
 	},
 };
 console.log(adalaber.run());
-console.log(adalaber.runAMarathon(50));
+console.log(adalaber.runAMarathon(90));
 console.log(adalaber.showBio());
