@@ -18,19 +18,19 @@ pearBasket.currentValue = 5;
 pearBasket.initialValue = 7;
 // métodos para añadir o quitar 1 sola pera
 pearBasket.add = function () {
-  if (this.currentValue < this.maxValue) {
-    this.currentValue++;
-  }
-  return this.currentValue;
+	if (this.currentValue < this.maxValue) {
+		this.currentValue++;
+	}
+	return this.currentValue;
 };
 pearBasket.remove = function () {
-  if (this.currentValue > this.minValue) {
-    this.currentValue--;
-  }
-  return this.currentValue;
+	if (this.currentValue > this.minValue) {
+		this.currentValue--;
+	}
+	return this.currentValue;
 };
 pearBasket.resetValue = function () {
-  return (this.currentValue = this.initialValue);
+	return (this.currentValue = this.initialValue);
 };
 console.log("Valor inicial:", pearBasket.initialValue);
 console.log("Valor actual:", pearBasket.currentValue);
