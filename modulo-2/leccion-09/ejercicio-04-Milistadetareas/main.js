@@ -11,13 +11,14 @@ const tasks = [
 ];
 
 const main = document.querySelector(".js_list");
+
 for (let index = 0; index < tasks.length; index++) {
-	if (data.completed === true) {
+	if (tasks.completed === true) {
 		main.innerHTML += `<li class="completed"><input class="checkbox"  id=${index} type="checkbox" name="checkbox" checked
-		/> ${data.name}  </li>`;
+		/> ${tasks[index].name}  </li>`;
 	} else {
-		main.innerHTML += `<li class=""><input class="checkbox" id=${index} type="checkbox" name="checkbox" 
-		/> ${data.name}  </li>`;
+		main.innerHTML += `<li class=""><input class="checkbox" id=${index} type="checkbox" name="checkbox"
+		/> ${tasks[index].name}  </li>`;
 	}
 }
 
@@ -33,10 +34,10 @@ for (let index = 0; index < tasks.length; index++) {
 
 const checkbox = document.querySelectorAll(".checkbox");
 
-// FUNCION HANDLE
+// FUNCION HANDLE DEL TICK EN EL CHECKBOX (SE APLICA LA CLASE A )
 function handleClickOnCheckbox(event) {
 	if (event.currentTarget.checked === true) {
-		event.currentTarget.parentNode.classList.toggle("completed");
+		event.currentTarget.parentNode.classList.add("completed");
 	} else {
 		event.currentTarget.parentNode.classList.remove("completed");
 	}
