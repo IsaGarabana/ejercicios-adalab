@@ -12,7 +12,8 @@
 
 // FUNCIÓN MANEJADORA
 
-function showReposList() {
+function showReposList(ev) {
+	ev.preventDefault();
 	const orgName = document.querySelector(".js-input");
 
 	fetch(`https://api.github.com/orgs/${orgName.value}`)
